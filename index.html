@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heri Project - Modern & Minimalis</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Heri Project - Oprek HP/Custom ROM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Heri Project</div>
-            <div class="menu" onclick="toggleMenu()">☰</div>
-        </nav>
+        <div class="container">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div id="menu" class="menu">
+                <a href="#tentang-kami">Tentang Kami</a>
+                <a href="#kontak-email">Kontak Email</a>
+            </div>
+            <h1>Heri Project</h1>
+            <h2>Jasa Oprek HP/Custom ROM via Remote</h2>
+            <img src="images/banner.jpg" alt="Banner Heri Project">
+        </div>
     </header>
-    <aside id="sidebar" class="sidebar">
-        <ul>
-            <li><a href="#about">Tentang Kami</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </aside>
     <main>
-        <section id="about">
-            <h1>Tentang Kami</h1>
-            <p>Layanan oprek HP dan custom ROM via remote dengan profesional dan aman.</p>
+        <section id="tentang-kami" class="about">
+            <h3>Tentang Kami</h3>
+            <p>Kami menyediakan layanan oprek HP dan custom ROM via remote dengan profesional dan aman.</p>
         </section>
-        <section id="contact">
-            <h1>Kontak</h1>
-            <p>Email: <a href="mailto:heri.project@example.com">heri.project@example.com</a></p>
+        <section id="kontak-email" class="contact">
+            <h3>Kontak Email</h3>
+            <p>Hubungi Kami: <a href="mailto:heri.project@example.com">heri.project@example.com</a></p>
         </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Heri Project. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
