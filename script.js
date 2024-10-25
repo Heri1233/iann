@@ -1,8 +1,11 @@
-function toggleMenu() {
-    var sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left === "-250px") {
-        sidebar.style.left = "0";
+const modeToggle = document.getElementById('mode-toggle');
+
+modeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    // Ganti ikon berdasarkan mode
+    if (document.body.classList.contains('light-mode')) {
+        modeToggle.textContent = '🌙'; // Ikon bulan untuk mode gelap
     } else {
-        sidebar.style.left = "-250px";
+        modeToggle.textContent = '☀️'; // Ikon matahari untuk mode terang
     }
-}
+});
